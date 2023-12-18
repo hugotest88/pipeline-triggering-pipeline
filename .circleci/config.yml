@@ -20,7 +20,7 @@ jobs:
       - run:
           name: Kick off new pipeline
           command: |
-              curl -X POST -H "content-type: application/json" 'https://internal.circleci.com/private/soc/e/6ccfca1c-5ed6-4dcf-96ca-374969d6edcb?secret=Miqj2gViO5GAY9H5DLkwBRs66xlMuAcuFamfnCMAe6E='
+              curl -X POST -H "content-type: application/json" 'https://internal.circleci.com/private/soc/e/6ccfca1c-5ed6-4dcf-96ca-374969d6edcb?secret=$WEBHOOK_SECRET'
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
