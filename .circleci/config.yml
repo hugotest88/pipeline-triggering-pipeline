@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: echo "Hello, World!"
+          command: echo $WEBHOOK_SECRET
       - run:
           name: Kick off new pipeline
           command: |
